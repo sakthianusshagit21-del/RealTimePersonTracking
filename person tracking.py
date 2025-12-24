@@ -2,13 +2,10 @@ import cv2
 import numpy as np
 import time
 
-# -------------------------------
-# Improved Centroid Tracker
-# -------------------------------
 class CentroidTracker:
     def __init__(self, max_disappeared=15):
         self.next_id = 0
-        self.objects = {}       # id : (x, y, w, h, cx, cy)
+        self.objects = {}
         self.disappeared = {}
         self.max_disappeared = max_disappeared
 
@@ -62,9 +59,7 @@ class CentroidTracker:
 
         return self.objects
 
-# -------------------------------
-# Main Program
-# -------------------------------
+
 def main():
     cap = cv2.VideoCapture(0)
     hog = cv2.HOGDescriptor()
