@@ -16,7 +16,7 @@ How to Run
 
 Run the program:
 
-python person tracking.py
+python person_tracking.py
 
 
 A window will open showing:
@@ -38,4 +38,5 @@ HOG detects full body only, not faces or hands
 IDs may change if detection fails or person leaves frame
 
 FPS is CPU dependent; should be ≥15 FPS on a laptop
+
 
